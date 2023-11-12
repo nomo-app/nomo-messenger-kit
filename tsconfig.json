@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES2017",
+        "module": "esnext",
+        "declaration": true,
+        "strict": true,
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "**/__tests__/*"
+    ]
+}

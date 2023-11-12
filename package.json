@@ -1,0 +1,23 @@
+{
+  "name": "nomo-webon-kit",
+  "version": "0.1.11",
+  "description": "Nomo-WebOn-Kit for the Nomo App",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "doPublish": "cp ../README.md README.md && npm publish",
+    "generate_docs": "git checkout main && git diff --exit-code && typedoc src/nomo_api.ts --plugin typedoc-plugin-markdown --out ../api-docs/ --exclude **.ts && rm ../api-docs/README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nomo-app/nomo-webon-kit.git"
+  },
+  "keywords": [],
+  "author": "dev2@nomo.app",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "typedoc": "^0.25.1",
+    "typedoc-plugin-markdown": "^3.16.0"
+  }
+}
