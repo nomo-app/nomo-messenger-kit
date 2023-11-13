@@ -1,5 +1,5 @@
-import {nomoChat} from "../../src";
+import {nomoSendMessage} from "../../src";
 
 test("send message", async () => {
-    await nomoChat.sendMessage({content: "foo", room: "bar"});
+    await nomoSendMessage({content: "foo", room: "bar"});
 });

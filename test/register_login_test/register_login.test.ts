@@ -1,7 +1,6 @@
-import {nomoChat} from "../../src";
-import {UserMatrix} from "../../src/register_login/register_login";
+import {nomoRegisterOrLogin, UserMatrix} from "../../src";
 
 test("register or login", async () => {
-    const userMatrix: UserMatrix = await nomoChat.registerOrLogin();
+    const userMatrix: UserMatrix = await nomoRegisterOrLogin();
     expect(userMatrix.user_id).toBe("not implemented");
 });

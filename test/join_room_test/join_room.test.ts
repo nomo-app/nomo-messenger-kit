@@ -1,5 +1,5 @@
-import {nomoChat} from "../../src";
+import {nomoJoinRoom} from "../../src";
 
 test("join room", async () => {
-  await nomoChat.joinRoom();
+    await nomoJoinRoom();
 });

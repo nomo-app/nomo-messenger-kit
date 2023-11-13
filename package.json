@@ -8,7 +8,7 @@
     "clean": "rm -rf dist",
     "test": "jest --testTimeout=10000",
     "doPublish": "npm publish",
-    "generate_docs": "git checkout main && git diff --exit-code && typedoc src/nomo_messenger_api.ts --plugin typedoc-plugin-markdown --out api-docs/ --exclude **.ts && rm api-docs/README.md"
+    "generate_docs": "git checkout main && typedoc src/index.ts --plugin typedoc-plugin-markdown --out api-docs/ --exclude **.ts && rm api-docs/README.md"
   },
   "repository": {
     "type": "git",
