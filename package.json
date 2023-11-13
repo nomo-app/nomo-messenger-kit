@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
+    "test": "jest --testTimeout=10000",
     "doPublish": "npm publish",
     "generate_docs": "git checkout main && git diff --exit-code && typedoc src/nomo_messenger_api.ts --plugin typedoc-plugin-markdown --out api-docs/ --exclude **.ts && rm api-docs/README.md"
   },
@@ -17,8 +18,18 @@
   "author": "dev2@nomo.app",
   "license": "ISC",
   "devDependencies": {
+    "tslib": "^2.6.2",
     "typedoc": "^0.25.1",
     "typedoc-plugin-markdown": "^3.16.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/jest": "^29.5.8",
     "typescript": "^5.2.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "roots": [
+      "test"
+    ]
   }
 }

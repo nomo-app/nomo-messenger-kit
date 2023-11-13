@@ -1,3 +1,3 @@
-export async function nomoJoinRoom() {
-    throw Error("not implemented");
+export async function nomoJoinRoom(): Promise<void> {
+    console.log("nomoJoinRoom not implemented");
 }

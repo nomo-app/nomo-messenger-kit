@@ -1,3 +1,3 @@
 export async function nomoListenRoom() {
-    throw Error("not implemented");
+    console.log("nomoListenRoom not implemented");
 }

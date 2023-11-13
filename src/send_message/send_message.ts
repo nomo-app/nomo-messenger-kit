@@ -7,5 +7,5 @@ export interface SendMessageArgs {
  * TODO: document here
  */
 export async function nomoSendMessage(args: SendMessageArgs) {
-    throw Error("not implemented");
+    console.log("nomoSendMessage not implemented");
 }
