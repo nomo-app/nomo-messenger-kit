@@ -7,7 +7,7 @@
     "build": "tsc",
     "clean": "rm -rf dist",
     "test": "jest --testTimeout=10000",
-    "doPublish": "npm publish",
+    "doPublish": "npm run build && git diff --exit-code && npm publish",
     "generate_docs": "git checkout main && typedoc src/index.ts --plugin typedoc-plugin-markdown --out api-docs/ --exclude **.ts && rm api-docs/README.md"
   },
   "repository": {
