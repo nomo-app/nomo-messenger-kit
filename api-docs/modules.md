@@ -27,7 +27,7 @@
 
 #### Defined in
 
-join_room/join_room.ts:1
+[join_room/join_room.ts:1](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/join_room/join_room.ts#L1)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-listen_room/listen_room.ts:1
+[listen_room/listen_room.ts:1](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/listen_room/listen_room.ts#L1)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-register_login/register_login.ts:8
+[register_login/register_login.ts:8](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/register_login/register_login.ts#L8)
 
 ___
 
@@ -77,4 +77,4 @@ TODO: document here
 
 #### Defined in
 
-send_message/send_message.ts:10
+[send_message/send_message.ts:10](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/send_message/send_message.ts#L10)

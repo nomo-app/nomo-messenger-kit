@@ -19,7 +19,7 @@
 
 #### Defined in
 
-register_login/register_login.ts:4
+[register_login/register_login.ts:4](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/register_login/register_login.ts#L4)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-register_login/register_login.ts:5
+[register_login/register_login.ts:5](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/register_login/register_login.ts#L5)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-register_login/register_login.ts:3
+[register_login/register_login.ts:3](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/register_login/register_login.ts#L3)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-register_login/register_login.ts:2
+[register_login/register_login.ts:2](https://github.com/nomo-app/nomo-messenger-kit/blob/2b37e2d/src/register_login/register_login.ts#L2)
