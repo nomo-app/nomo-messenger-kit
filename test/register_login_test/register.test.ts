@@ -1,10 +1,24 @@
 import { UserMatrix, nomoRegister } from "../../src";
 
+
+function generateRandomString(length: number): string {
+    const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+  
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * charset.length);
+      result += charset.charAt(randomIndex);
+    }
+  
+    return result;
+  }
+  
+
 // the register success test is for checking if the register function returns a UserMatrix
 // it fails if the mnemonic is already registered on the server
 test("register_success", async () => {
     // use a new mnemonic to test the register_success function properly
-    const mnemonic = "perfect document champion when clinic describe trash fatal nation soda smooth table";
+    const mnemonic = generateRandomString(200);
     const userMatrix: UserMatrix = await nomoRegister(mnemonic);
     expect(userMatrix);
 });
