@@ -30,7 +30,6 @@
                 "--runTestsByPath",
                 "${jest.testFile}"
             ],
-            "cwd": "/Users/lucakramberger/Documents/vougee/nomo-messenger-kit",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "runtimeExecutable": "npm"
