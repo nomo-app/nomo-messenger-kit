@@ -14,6 +14,14 @@ The Decentralized Messenger is one of the core foundations of the Nomo App.
 Internally, `nomo-messenger-kit` relies on the [matrix-js-sdk](https://www.npmjs.com/package/matrix-js-sdk) for its operations.
 If needed, you can always bypass the `nomo-messenger-kit` and invoke the lower-level matrix-js-sdk directly.
 
+## How to use
+
+First, install it via npm:
+
+`npm i nomo-messenger-kit`
+
+TODO: add some instructions
+
 ## Unit tests
 
 TODO: link individual Unit tests
