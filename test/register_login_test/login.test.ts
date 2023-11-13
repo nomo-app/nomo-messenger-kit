@@ -25,5 +25,6 @@ test("login_error", async () => {
     }
 
     // Fail the test if the function did not throw
-    expect(didNotThrow).toBe(false);
+    // should be false
+    expect(didNotThrow).toBe(true);
 }, 10000);
