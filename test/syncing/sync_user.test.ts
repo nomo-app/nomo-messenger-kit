@@ -1,9 +1,27 @@
-import { nomoRegisterOrLogin, nomoSyncUser, UserMatrix, nomoCreateFilter } from "../../src";
+import { nomoRegisterOrLogin, nomoSyncUser, UserMatrix } from "../../src";
 
 test("sync user", async () => {
-    const mnemonic = "diet say develop title sibling steel blast table chicken foster fuel giraffe";
-    const userMatrix: UserMatrix = await nomoRegisterOrLogin(mnemonic);
-    // const filterID: string = await nomoCreateFilter(userMatrix.access_token, userMatrix.user_id);
-    // await nomoSyncUser(userMatrix.access_token, "", '', "online", false);
-    // expect(userMatrix.user_id).toBe("@0x3f0e8cF0c6eb9789348541D9D0Ce4ac847277e9B:zeniq.chat");
+  const mnemonic =
+    "diet say develop title sibling steel blast table chicken foster fuel giraffe";
+  const userMatrix: UserMatrix = await nomoRegisterOrLogin(mnemonic);
+
+  expect(userMatrix.user_id).toBe(
+    "@0xa563B68Ba292601968A4fb63861e9d847126E83E:zeniq.chat"
+  );
+  expect(userMatrix.home_server).toBe("zeniq.chat");
+
+  // const filterID: string = await nomoCreateFilter(userMatrix.access_token, userMatrix.user_id);
+  const res = await nomoSyncUser(
+    userMatrix.access_token,
+    "",
+    "",
+    "online",
+    false
+  );
+  expect(res.status).toBe(200);
+
+  const data = res.data;
+  console.log("sync data", data);
+
+  expect(data.rooms).toBeDefined();
 }, 10000);
