@@ -1,5 +1,5 @@
 import axios from "axios";
-const server = 'https://zeniq.chat/';
+import { server } from "..";
 export interface SendMessageArgs {
     roomId: string;
     content: Map<string, any>;

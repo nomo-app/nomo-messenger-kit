@@ -1,10 +1,10 @@
 import axios from "axios";
-const server = 'https://zeniq.chat/';
+import { server } from "..";
 
 /**
  * TODO: document here
  */
-export async function nomoCreateRoom(args: Map<string, any>, accessToken: string): Promise<string> {
+export async function nomoCreateRoom(args: any, accessToken: string): Promise<string> {
     const url = server + `_matrix/client/v3/createRoom`;
 
     try {

@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const server = 'https://zeniq.chat/';
+import { server } from "..";
 
 export async function nomoSyncUser(accessToken: string, since: string, filter: string, setPresence: string, fullState: boolean) {
     const res = await axios.get(server + '_matrix/client/v3/sync', {

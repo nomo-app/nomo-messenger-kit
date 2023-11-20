@@ -1,5 +1,5 @@
 import axios from "axios";
-const server = 'https://zeniq.chat/';
+import { server } from "..";
 
 export async function nomoCreateFilter(accessToken: string, userID:string): Promise<string> {
     const url = server + `_matrix/client/v3/user/${userID}/filter`;
