@@ -7,7 +7,7 @@ import { server } from "..";
 export async function nomoJoinRoom(roomId: string, accessToken: string): Promise<string> {
     const url = server + `_matrix/client/v3/rooms/${roomId}/join`;
 
-    const args: Map<string, any> = new Map;
+    const args = {};
 
     try {
         const response = await axios.post(url, args, {

@@ -6,14 +6,11 @@ test("create room", async () => {
   const mnemonic =
     "diet say develop title sibling steel blast table chicken foster fuel giraffe";
   const userMatrix: UserMatrix = await nomoRegisterOrLogin(mnemonic);
-  const args: Map<string, any> = new Map();
-  {
-    [
-      ["name", generateRandomString(25)],
-      ["preset", "private_chat"],
-      ["room_alias_name", generateRandomString(10)],
-    ];
-  }
+  const args = {
+    name: generateRandomString(25),
+    preset: "private_chat",
+    room_alias_name: generateRandomString(10),
+  };
   let roomId = await nomoCreateRoom(args, userMatrix.access_token);
   console.log("roomId", roomId);
 

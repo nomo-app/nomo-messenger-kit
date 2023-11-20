@@ -2,7 +2,7 @@ import axios from "axios";
 import { server } from "..";
 export interface SendMessageArgs {
     roomId: string;
-    content: Map<string, any>;
+    content: any;
     transationID: string;
     eventType: string;
 }
