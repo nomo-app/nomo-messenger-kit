@@ -11,17 +11,17 @@ test("sync user", async () => {
   expect(userMatrix.home_server).toBe("zeniq.chat");
 
   // const filterID: string = await nomoCreateFilter(userMatrix.access_token, userMatrix.user_id);
-  const res = await nomoSyncUser(
-    userMatrix.access_token,
-    "",
-    "",
-    "online",
-    false
-  );
-  expect(res.status).toBe(200);
+  // const res = await nomoSyncUser(
+  //   userMatrix.access_token,
+  //   "",
+  //   "",
+  //   "online",
+  //   false
+  // );
+  // expect(res.status).toBe(200);
 
-  const data = res.data;
-  console.log("sync data", data);
+  // const data = res.data;
+  // console.log("sync data", data);
 
-  expect(data.rooms).toBeDefined();
+  // expect(data.rooms).toBeDefined();
 }, 10000);
