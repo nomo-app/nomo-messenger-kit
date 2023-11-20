@@ -10,3 +10,10 @@ export function generateRandomString(length: number): string {
 
   return result;
 }
+
+//TODO
+export function getCipherText(text: string): string {
+  
+
+  return text;
+}
