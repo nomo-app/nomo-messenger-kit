@@ -13,7 +13,7 @@ test("send fixed room message", async () => {
         "diet say develop title sibling steel blast table chicken foster fuel giraffe";
     const userMatrix: UserMatrix = await nomoRegisterOrLogin(mnemonic);
 
-    let roomId = '!kGnwe2HnUpcBlLnb:zeniq.chat';
+    let roomId = '!Qkfj9DB2jRcPIt3G:zeniq.chat';
     const contentMap = {
         body: 'Test Message',
         msgtype: "m.text",

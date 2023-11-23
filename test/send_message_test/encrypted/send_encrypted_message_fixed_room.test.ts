@@ -14,7 +14,7 @@ test("send encrypted message fixed room", async () => {
         "diet say develop title sibling steel blast table chicken foster fuel giraffe";
     const userMatrix: UserMatrix = await nomoRegisterOrLogin(mnemonic);
 
-    let roomId = '!hogSLn27JpmCq2NZ:zeniq.chat';
+    let roomId = '!dvFyIoIIVgmQlae4:zeniq.chat';
     //TODO ciphertext
     let cipherText = getCipherText('test');
 
