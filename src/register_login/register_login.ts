@@ -45,7 +45,7 @@ export async function nomoRegister(mnemonic: string): Promise<UserMatrix> {
 }
 
 async function _register(user: any): Promise<UserMatrix> {
-    const username = user.address;
+    const username = user.address.toLowerCase();
     const sig = getSignature(username, Date.now(), user);
     const res = await axios.post(server + '_matrix/client/v3/register', {
         username,
@@ -68,7 +68,7 @@ export async function nomoLogin(mnemonic: string): Promise<UserMatrix> {
 }
 
 async function _login(user: any): Promise<UserMatrix> {
-    const username = user.address;
+    const username = user.address.toLowerCase();
     const { message, signature } = getSignature(username, Date.now(), user);
     const res = await axios.post(server + '_matrix/client/v3/login', {
         type: 'm.login.signature',
