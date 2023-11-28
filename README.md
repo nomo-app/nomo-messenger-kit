@@ -7,7 +7,7 @@ Please roll your own matrix-functions if you cannot wait for it.
 
 See the [api-docs](api-docs/modules.md) for a list of individual functions.
 
-See the [Decentralized Messenger Philosophy](https://github.com/nomo-app/nomo-messenger-kit/blob/main/advanced-docs/messenger_philosophy.md) for understanding the goals of the Nomo messenger.
+See the [Decentralized Messenger Philosophy](https://github.com/nomo-app/nomo-messenger-kit/blob/main/advanced-docs/messenger_philosophy.md) for understanding the goals of the Decentralized Messenger.
 
 The Decentralized Messenger is one of the core foundations of the Nomo App.
 `nomo-messenger-kit` empowers JS-developers to interact with the Decentralized Messenger.
