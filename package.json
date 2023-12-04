@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "test": "jest --testTimeout=10000",
+    "test": "jest automatic/ --testTimeout=10000",
+    "test:manual": "jest manual/",
     "doPublish": "npm run build && git diff --exit-code && npm publish",
     "generate_docs": "git checkout main && typedoc src/index.ts --plugin typedoc-plugin-markdown --out api-docs/ --exclude **.ts && rm api-docs/README.md"
   },
@@ -21,6 +22,7 @@
     "axios": "^1.6.1",
     "bip39": "^3.1.0",
     "ethereumjs-wallet": "^1.0.2",
+    "openai": "^4.20.1",
     "web3": "^1.10.3"
   },
   "devDependencies": {

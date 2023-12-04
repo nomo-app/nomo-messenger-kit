@@ -1,7 +1,8 @@
 /// The login_error test is for checking if the login function returns a UserMatrix even if the
 
-import { nomoLogin } from "../../src";
-import { generateRandomString } from "../test_util";
+import { nomoLogin } from "../../../src";
+import { generateRandomString } from "../../test_util";
+
 
 /// mnemonic is not yet registered on the server.
 test("login_error", async () => {

@@ -3,8 +3,8 @@ import {
     nomoRegisterOrLogin,
     UserMatrix,
     SendMessageArgs,
-} from "../../../src";
-import { generateRandomString } from "../../test_util";
+} from "../../../../src";
+import { generateRandomString } from "../../../test_util";
 
 // The test will use the fixed roomId for sending test messages
 // The message is not encrypted, so it is plain text

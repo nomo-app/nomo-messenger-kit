@@ -1,6 +1,6 @@
-import { nomoRegisterOrLogin, UserMatrix, nomoJoinRoom } from "../../src";
-import { nomoCreateRoom } from "../../src/create_room/create_room";
-import { generateRandomString } from "../test_util";
+import { nomoRegisterOrLogin, UserMatrix, nomoJoinRoom } from "../../../src";
+import { nomoCreateRoom } from "../../../src/create_room/create_room";
+import { generateRandomString } from "../../test_util";
 
 test("join room", async () => {
     // User 1 logs in
