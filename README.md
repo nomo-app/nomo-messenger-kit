@@ -30,3 +30,12 @@ TODO: link individual Unit tests
 
 To complement the static API-docs, the Unit tests act as an *executable documentation* for the `nomo-messenger-kit`.
 Furthermore, the Unit tests serve as a test for the backend infrastructure of the Decentralized Messenger.
+
+## Nomo Assistant Listener
+
+The Nomo Assistant Listener is a AI model which answeres to your questions in a chat. To start the listener, run the following command:
+
+```
+npm install
+node src/ai_chat/listen_on_messages.ts
+```
