@@ -37,5 +37,5 @@ The Nomo Assistant Listener is a AI model which answeres to your questions in a 
 
 ```
 npm install
-node src/ai_chat/listen_on_messages.ts
+node dist/ai_chat/listen_on_messages.js
 ```

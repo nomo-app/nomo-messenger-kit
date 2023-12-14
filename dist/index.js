@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.nomoChatWithAi = exports.nomoCreateFilter = exports.nomoSyncUser = exports.nomoSendMessage = exports.nomoJoinRoom = exports.nomoListenRoom = exports.nomoRegister = exports.nomoLogin = exports.nomoRegisterOrLogin = exports.server = void 0;
+exports.nomoAssistantListenOnMessages = exports.nomoChatWithAi = exports.nomoCreateFilter = exports.nomoSyncUser = exports.nomoSendMessage = exports.nomoJoinRoom = exports.nomoListenRoom = exports.nomoRegister = exports.nomoLogin = exports.nomoRegisterOrLogin = exports.server = void 0;
 // here are the publicly exported functions
 const server = 'https://zeniq.chat/';
 exports.server = server;
@@ -20,3 +20,5 @@ var create_filter_1 = require("./syncing/create_filter");
 Object.defineProperty(exports, "nomoCreateFilter", { enumerable: true, get: function () { return create_filter_1.nomoCreateFilter; } });
 var ai_chat_1 = require("./ai_chat/ai_chat");
 Object.defineProperty(exports, "nomoChatWithAi", { enumerable: true, get: function () { return ai_chat_1.nomoChatWithAi; } });
+var listen_on_messages_1 = require("./ai_chat/listen_on_messages");
+Object.defineProperty(exports, "nomoAssistantListenOnMessages", { enumerable: true, get: function () { return listen_on_messages_1.nomoAssistantListenOnMessages; } });
