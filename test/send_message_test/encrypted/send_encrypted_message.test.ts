@@ -4,9 +4,9 @@ import {
     UserMatrix,
     SendMessageArgs,
     server,
-} from "../../../../src";
-import { nomoCreateRoom } from "../../../../src/create_room/create_room";
-import { generateRandomString, getCipherText } from "../../../test_util";
+} from "../../../src";
+import { nomoCreateRoom } from "../../../src/create_room/create_room";
+import { generateRandomString, getCipherText } from "../../test_util";
 
 // const Olm = require('@matrix-org/olm');
 

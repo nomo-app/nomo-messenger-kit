@@ -1,5 +1,5 @@
-import { UserMatrix, nomoRegister } from "../../../src";
-import { generateRandomString } from "../../test_util";
+import { UserMatrix, nomoRegister } from "../../src";
+import { generateRandomString } from "../test_util";
 
 // the register success test is for checking if the register function returns a UserMatrix
 // it fails if the mnemonic is already registered on the server

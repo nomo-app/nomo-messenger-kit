@@ -1,7 +1,7 @@
 /// The login_error test is for checking if the login function returns a UserMatrix even if the
 
-import { nomoLogin } from "../../../src";
-import { generateRandomString } from "../../test_util";
+import { nomoLogin } from "../../src";
+import { generateRandomString } from "../test_util";
 
 
 /// mnemonic is not yet registered on the server.
@@ -22,5 +22,5 @@ test("login_error", async () => {
   }
 
   // Fail the test if the function did not throw
-  expect(didThrow).toBe(false); // TODO: change this to true once issue ZEC-4 is fixed
+  expect(didThrow).toBe(true); // TODO: change this to true once issue ZEC-4 is fixed
 }, 10000);

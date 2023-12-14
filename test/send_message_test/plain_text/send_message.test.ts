@@ -3,9 +3,9 @@ import {
   nomoRegisterOrLogin,
   UserMatrix,
   SendMessageArgs,
-} from "../../../../src";
-import { nomoCreateRoom } from "../../../../src/create_room/create_room";
-import { generateRandomString } from "../../../test_util";
+} from "../../../src";
+import { nomoCreateRoom } from "../../../src/create_room/create_room";
+import { generateRandomString } from "../../test_util";
 
 
 // The test will create a new room, send a message to it, and then check if the message was sent.

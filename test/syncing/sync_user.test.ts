@@ -1,4 +1,4 @@
-import { nomoCreateFilter, nomoRegisterOrLogin, nomoSyncUser, UserMatrix } from "../../../src";
+import { nomoCreateFilter, nomoRegisterOrLogin, nomoSyncUser, UserMatrix } from "../../src";
 
 test("sync user", async () => {
   const mnemonic =

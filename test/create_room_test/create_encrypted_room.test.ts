@@ -1,6 +1,6 @@
-import { nomoJoinRoom, nomoRegisterOrLogin, UserMatrix } from "../../../src";
-import { nomoCreateRoom } from "../../../src/create_room/create_room";
-import { generateRandomString } from "../../test_util";
+import { nomoJoinRoom, nomoRegisterOrLogin, UserMatrix } from "../../src";
+import { nomoCreateRoom } from "../../src/create_room/create_room";
+import { generateRandomString } from "../test_util";
 
 test("create encrypted room", async () => {
     const mnemonic =
