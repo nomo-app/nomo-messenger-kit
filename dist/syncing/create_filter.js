@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.nomoCreateFilter = void 0;
 const tslib_1 = require("tslib");
 const axios_1 = tslib_1.__importDefault(require("axios"));
-const server = 'https://zeniq.chat/';
+const __1 = require("..");
 async function nomoCreateFilter(accessToken, userID) {
-    const url = server + `_matrix/client/v3/user/${userID}/filter`;
+    const url = __1.server + `_matrix/client/v3/user/${userID}/filter`;
     const filterData = {
         'room': {
             'state': {

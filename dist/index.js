@@ -1,7 +1,9 @@
 "use strict";
-// here are the publicly exported functions
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.nomoCreateFilter = exports.nomoSyncUser = exports.nomoSendMessage = exports.nomoJoinRoom = exports.nomoListenRoom = exports.nomoRegister = exports.nomoLogin = exports.nomoRegisterOrLogin = void 0;
+exports.nomoCreateFilter = exports.nomoSyncUser = exports.nomoSendMessage = exports.nomoJoinRoom = exports.nomoListenRoom = exports.nomoRegister = exports.nomoLogin = exports.nomoRegisterOrLogin = exports.server = void 0;
+// here are the publicly exported functions
+const server = 'https://zeniq.chat/';
+exports.server = server;
 var register_login_1 = require("./register_login/register_login");
 Object.defineProperty(exports, "nomoRegisterOrLogin", { enumerable: true, get: function () { return register_login_1.nomoRegisterOrLogin; } });
 Object.defineProperty(exports, "nomoLogin", { enumerable: true, get: function () { return register_login_1.nomoLogin; } });

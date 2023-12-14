@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.nomoLogin = exports.nomoRegister = exports.nomoRegisterOrLogin = void 0;
 const tslib_1 = require("tslib");
 const axios_1 = tslib_1.__importDefault(require("axios"));
-const server = 'https://zeniq.chat/';
+const __1 = require("..");
 const Web3 = require("web3");
 const web3 = new Web3();
 const bip39 = require('bip39');
@@ -34,9 +34,9 @@ async function nomoRegister(mnemonic) {
 }
 exports.nomoRegister = nomoRegister;
 async function _register(user) {
-    const username = user.address;
+    const username = user.address.toLowerCase();
     const sig = getSignature(username, Date.now(), user);
-    const res = await axios_1.default.post(server + '_matrix/client/v3/register', {
+    const res = await axios_1.default.post(__1.server + '_matrix/client/v3/register', {
         username,
         message: sig.message,
         publickey: user.address,
@@ -55,9 +55,9 @@ async function nomoLogin(mnemonic) {
 }
 exports.nomoLogin = nomoLogin;
 async function _login(user) {
-    const username = user.address;
+    const username = user.address.toLowerCase();
     const { message, signature } = getSignature(username, Date.now(), user);
-    const res = await axios_1.default.post(server + '_matrix/client/v3/login', {
+    const res = await axios_1.default.post(__1.server + '_matrix/client/v3/login', {
         type: 'm.login.signature',
         username,
         publickey: user.address,
